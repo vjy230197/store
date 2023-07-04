@@ -7,8 +7,6 @@ const Slider = () => {
 
     const slideIndex = useSelector((state) => state.slider.value)
 
-    console.log('slideIndex', slideIndex);
-
     const dispatch = useDispatch();
 
     const handle = () => {
@@ -64,7 +62,7 @@ const Slider = () => {
 
                 </button>
                 <button className='absolute top-[50%] left-4 bg-white rounded-full p-2 hover:bg-green-300' onClick={handle1}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                     </svg>
 
